@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build 1: Schematic Design | Bharatpur Build Guild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body class="guide-body">
+
+<nav class="guide-nav grid-bg">
+  <div class="section-inner" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+    <a href="index.html" class="nav-logo">
+      <img src="homepage_logo-3585630b.webp" alt="Logo" style="height:28px;" />
+    </a>
+    <div style="display: flex; gap: 20px;">
+      <a href="index.html" class="secondary-btn">Home</a>
+      <a href="build2.html" class="secondary-btn">Build 2</a>
+    </div>
+  </div>
+</nav>
+
+<div class="guide-container">
+    <header class="guide-header">
+        <span class="step-label">Module 01</span>
+        <h1>Schematic Design</h1>
+        <p>Learn to design the circuit for a 555 LED Chaser. We'll be using EasyEDA Standard Edition.</p>
+    </header>
+
+    <!-- Step 1 -->
+    <section class="step-section">
+        <span class="step-label">Step 1</span>
+        <h2 class="step-title">Creating your project</h2>
+        <div class="step-body">
+            <p>Go to <a href="https://easyeda.com/editor" target="_blank">easyeda.com/editor</a> and click <strong>Design Online > STD edition</strong>. We are using the standard edition for simplicity.</p>
+            <p>Once the editor loads, click <strong>File > New > Project</strong>. Name your project (e.g., "555_Chaser") and click Save.</p>
+        </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="step-section">
+        <span class="step-label">Step 2</span>
+        <h2 class="step-title">The Component Library</h2>
+        <div class="step-body">
+            <p>In order to place components, click <strong>Library</strong> on the left sidebar and search for these specific part numbers. Click "Place" for each one:</p>
+            
+            <table class="parts-table">
+                <thead>
+                    <tr>
+                        <th>Part Code</th>
+                        <th>Component Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="part-code">CD4017BCN</span></td><td>Main CD4017 IC</td></tr>
+                    <tr><td><span class="part-code">C46749</span></td><td>555 Timer IC</td></tr>
+                    <tr><td><span class="part-code">C492401</span></td><td>Power Header (VCC/GND)</td></tr>
+                    <tr><td><span class="part-code">C81276</span></td><td>Debug Header</td></tr>
+                    <tr><td><span class="part-code">C62934</span></td><td>Electrolytic Capacitor (Directional!)</td></tr>
+                    <tr><td><span class="part-code">C249157</span></td><td>Ceramic Capacitor</td></tr>
+                    <tr><td><span class="part-code">C713997</span></td><td>1k ohm Resistor</td></tr>
+                    <tr><td><span class="part-code">C58592</span></td><td>470 ohm Resistor</td></tr>
+                    <tr><td><span class="part-code">C118912</span></td><td>Potentiometer (Speed Control)</td></tr>
+                    <tr><td><span class="part-code">C2895480</span></td><td>Normal LED (Place 10)</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="step-section">
+        <span class="step-label">Step 3</span>
+        <h2 class="step-title">Placement & Arrangement</h2>
+        <div class="step-body">
+            <p>Now that you have placed all of your components, arrange them approximately as shown below. This will make it much easier when you wire the circuit.</p>
+            <div class="img-container">
+                <img src="https://blueprint.hackclub.com/old-cdn/b86449f89ce3fbcc4dfb37cfea56d0e402fbd122__0B589CAB-0E7F-403F-90D3-7350DD6C9C88_.webp" alt="Placement Guide">
+                <div class="img-caption">Suggested arrangement of ICs and discrete components.</div>
+            </div>
+            <ul>
+                <li>Use <strong>'R'</strong> to rotate components.</li>
+                <li>Use <strong>Copy/Paste</strong> to create the 10 LEDs quickly.</li>
+                <li>Remember to <strong>Save (Ctrl+S)</strong> often!</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section class="step-section">
+        <span class="step-label">Step 4</span>
+        <h2 class="step-title">Wiring everything together</h2>
+        <div class="step-body">
+            <p>Connect your components following the diagram below. The little <strong>red dots</strong> indicate that two wires are connected. If wires cross without a dot, they are not connected.</p>
+            <div class="img-container">
+                <img src="https://blueprint.hackclub.com/old-cdn/e089878c0586cfaaef00bc5f3b7da4044525edf6__3A16B0A8-2A46-4CCC-9F58-228AC47FAB86_.webp" alt="Schematic Diagram">
+                <div class="img-caption">The complete 555 + 4017 Schematic.</div>
+            </div>
+            <div class="tip-card">
+                <div>
+                    <strong>Pro Tip:</strong> Press <strong>'W'</strong> to activate the wire tool. Wire together the Ground (GND) of all 10 LEDs first!
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="https://blueprint.hackclub.com/old-cdn/778ce6cb2c018696f8354aabb15b7112f4873a99__BBC27CE3-7A26-4E46-AFA7-E725BDBB9552_.webp" alt="Wiring Detail">
+                <div class="img-caption">Detail of the wiring logic.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="nav-links-bottom">
+        <div>
+            <p style="font-size: 14px; margin-bottom: 5px; color: var(--guide-dim);">Finished your schematic?</p>
+            <a href="build2.html" class="hero-btn">Design the PCB →</a>
+        </div>
+        <a href="index.html" class="secondary-btn">Back to Home</a>
+    </div>
+</div>
+
+<footer style="padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 100px;">
+  <p style="color: var(--guide-dim);">Bharatpur Build Guild x Hack Club Blueprint</p>
+</footer>
+
+</body>
+</html>

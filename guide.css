@@ -1,0 +1,192 @@
+
+:root {
+    --guide-bg: #081c35;
+    --guide-card: rgba(255, 255, 255, 0.04);
+    --guide-accent: #00f2ff;
+    --guide-success: #00ff88;
+    --guide-text: #ffffff;
+    --guide-dim: rgba(255, 255, 255, 0.6);
+}
+
+.guide-body {
+    background-color: var(--guide-bg);
+    color: var(--guide-text);
+    font-family: 'Phantom Sans', 'Poppins', sans-serif;
+}
+
+.guide-nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background: #041226;
+}
+
+.guide-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.guide-header {
+    text-align: left;
+    margin-bottom: 60px;
+    border-left: 5px solid var(--guide-accent);
+    padding-left: 30px;
+}
+
+.guide-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.guide-header p {
+    font-size: 18px;
+    color: var(--guide-dim);
+}
+
+.step-section {
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
+}
+
+.step-label {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--guide-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.step-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.step-body {
+    background: var(--guide-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 40px;
+    line-height: 1.7;
+}
+
+.step-body p {
+    margin-bottom: 20px;
+}
+
+.step-body ul, .step-body ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.step-body li {
+    margin-bottom: 10px;
+}
+
+.img-container {
+    background: #000;
+    border-radius: 8px;
+    margin: 30px 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.img-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.01);
+}
+
+.img-caption {
+    padding: 12px 20px;
+    background: rgba(0,0,0,0.6);
+    font-size: 13px;
+    color: var(--guide-dim);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.parts-table th, .parts-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.parts-table th {
+    color: var(--guide-accent);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.part-code {
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.tip-card {
+    background: rgba(0, 242, 255, 0.05);
+    border: 1px solid var(--guide-accent);
+    padding: 24px;
+    border-radius: 8px;
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.tip-card i {
+    font-size: 24px;
+    color: var(--guide-accent);
+}
+
+.nav-links-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--guide-accent);
+    color: #000;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 242, 255, 0.2);
+}
+
+.secondary-btn {
+    color: var(--guide-accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.secondary-btn:hover {
+    text-decoration: underline;
+}

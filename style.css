@@ -42,6 +42,8 @@
   --bp-success: #a8f0ae;
   --font-content: "Phantom Sans", "Poppins", sans-serif;
   --font-heading: "Poppins", sans-serif;
+  --guide-accent: #00f2ff;
+  --guide-success: #00ff88;
 }
 
 *, *::before, *::after {
