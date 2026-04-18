@@ -1,154 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Build 2: PCB Designing | Bharatpur Build Guild</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="guide.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build 2: PCB Designing | Bharatpur Build Guild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="guide.css">
 </head>
+
 <body class="guide-body">
 
-<nav class="guide-nav grid-bg">
-  <div class="section-inner" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
-    <a href="index.html" class="nav-logo">
-      <img src="homepage_logo-3585630b.webp" alt="Logo" style="height:28px;" />
-    </a>
-    <div style="display: flex; gap: 20px;">
-      <a href="index.html" class="secondary-btn">Home</a>
-      <a href="build1.html" class="secondary-btn">Build 1</a>
-    </div>
-  </div>
-</nav>
-
-<div class="guide-container">
-    <header class="guide-header">
-        <span class="step-label">Module 02</span>
-        <h1>PCB Designing</h1>
-        <p>Convert your schematic into a physical Printed Circuit Board (PCB) and prepare for manufacturing.</p>
-    </header>
-
-    <!-- Step 1 -->
-    <section class="step-section">
-        <span class="step-label">Step 1</span>
-        <h2 class="step-title">Convert Schematic to PCB</h2>
-        <div class="step-body">
-            <p>At the top of your screen in EasyEDA, click <strong>Design > Convert Schematic to PCB</strong>.</p>
-            <p>If you see a warning about nets, click "Check Net" or just proceed. Now, you should see your components inside a purple rectangle.</p>
-        </div>
-    </section>
-
-    <!-- Step 2 -->
-    <section class="step-section">
-        <span class="step-label">Step 2</span>
-        <h2 class="step-title">Create a Custom Outline</h2>
-        <div class="step-body">
-            <p>The purple lines are your <strong>BoardOutLine</strong>. You should customize this! A custom shape makes your board unique.</p>
-            <ul>
-                <li>Select the <strong>BoardOutLine</strong> layer in the sidebar (highlighted in pink/purple).</li>
-                <li>Use the <strong>Track</strong> tool to draw your shape.</li>
-                <li>Keep your board size below <strong>100x100mm</strong>.</li>
-            </ul>
-            <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
-                <img src="easyeda_board_outline.png" alt="Board Outline Layer" style="max-width: 200px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
-                <img src="easyeda_pcb_tools.png" alt="PCB Tools" style="max-width:300px; height: fit-content; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
-            </div>
-            <div class="img-container">
-                <img src="https://blueprint.hackclub.com/old-cdn/a8846471c379ddc28fc84b366451824d841dfee6_image.webp" alt="PCB Outline">
-                <div class="img-caption">Components placed inside a custom board outline.</div>
+    <nav class="guide-nav grid-bg">
+        <div class="section-inner"
+            style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <a href="index.html" class="nav-logo">
+                <img src="homepage_logo-3585630b.webp" alt="Logo" style="height:28px;" />
+            </a>
+            <div style="display: flex; gap: 20px;">
+                <a href="index.html" class="secondary-btn">Home</a>
+                <a href="build1.html" class="secondary-btn">Build 1</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Step 3 -->
-    <section class="step-section">
-        <span class="step-label">Step 3</span>
-        <h2 class="step-title">Routing your Traces</h2>
-        <div class="step-body">
-            <p>The blue ratlines show you the connections but they aren't real wires yet. You need to "route" them with copper tracks.</p>
-            <ul>
-                <li>Select the <strong>TopLayer (Red)</strong> or <strong>BottomLayer (Blue)</strong>.</li>
-                <li>Click <strong>'W'</strong> or the Track tool to draw copper lines between pads.</li>
-                <li>If wires must cross each other, click <strong>'V'</strong> to place a <strong>Via</strong> and switch to the other side of the board.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="guide-container">
+        <header class="guide-header">
+            <span class="step-label">Module 02</span>
+            <h1>PCB Designing</h1>
+            <p>Convert your schematic into a physical Printed Circuit Board (PCB) and prepare for manufacturing.</p>
+        </header>
 
-    <!-- Step 4 -->
-    <section class="step-section">
-        <span class="step-label">Step 4</span>
-        <h2 class="step-title">Add Custom Art</h2>
-        <div class="step-body">
-            <p>You can add text and images to your board using the <strong>TopSilkLayer</strong> (the white ink).</p>
-            <p><strong>IMPORTANT:</strong> You must add the <strong>JLCPCB logo</strong> to your silkscreen to show your support! You can find it in the EasyEDA library or import it as an image.</p>
-            <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
-                <img src="easyeda_top_silk.png" alt="Top Silk Layer" style="max-width: 200px; border-radius: 4px;">
-                <img src="easyeda_text_properties.png" alt="Text Properties" style="max-width: 200px; border-radius: 4px;">
+        <!-- Step 1 -->
+        <section class="step-section">
+            <span class="step-label">Step 1</span>
+            <h2 class="step-title">Convert Schematic to PCB</h2>
+            <div class="step-body">
+                <p>At the top of your screen in EasyEDA, click <strong>Design > Convert Schematic to PCB</strong>.</p>
+                <p>If you see a warning about nets, click "Check Net" or just proceed. Now, you should see your
+                    components inside a purple rectangle.</p>
             </div>
-            <p>Go to <strong>File > Import > Image</strong> to add your own logo or artwork to the board.</p>
-            <div class="img-container">
-                <img src="easyeda_logo_placement.png" alt="Logo Placement Example">
-                <div class="img-caption">Example placement of the JLCPCB logo and custom text.</div>
-            </div>
-            <div class="img-container">
-                <img src="https://blueprint.hackclub.com/old-cdn/50638b1bb956cd429eab5755e7aaf142ffe088db_image.webp" alt="3D View">
-                <div class="img-caption">3D View of a finished custom PCB design.</div>
-            </div>
-            <div class="tip-card">
-                <div>
-                    <strong>Pro Tip:</strong> Click <strong>View > 3D View</strong> periodically to see how your physical board will actually look!
+        </section>
+
+        <!-- Step 2 -->
+        <section class="step-section">
+            <span class="step-label">Step 2</span>
+            <h2 class="step-title">Create a Custom Outline</h2>
+            <div class="step-body">
+                <p>The purple lines are your <strong>BoardOutLine</strong>. You should customize this! A custom shape
+                    makes your board unique.</p>
+                <ul>
+                    <li>Select the <strong>BoardOutLine</strong> layer in the sidebar (highlighted in pink/purple).</li>
+                    <li>Use the <strong>Track</strong> tool to draw your shape.</li>
+                    <li>Keep your board size below <strong>100x100mm</strong>.</li>
+                </ul>
+                <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                    <img src="easyeda_board_outline.png" alt="Board Outline Layer"
+                        style="max-width: 200px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
+                    <img src="easyeda_pcb_tools.png" alt="PCB Tools"
+                        style="max-width:300px; height: fit-content; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
+                </div>
+                <div class="img-container">
+                    <img src="https://blueprint.hackclub.com/old-cdn/a8846471c379ddc28fc84b366451824d841dfee6_image.webp"
+                        alt="PCB Outline">
+                    <div class="img-caption">Components placed inside a custom board outline.</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Step 5 -->
-    <section class="step-section">
-        <span class="step-label">Step 5</span>
-        <h2 class="step-title">Manufacturing Files</h2>
-        <div class="step-body">
-            <p>Once you pass the <strong>Design Rules Check (Design > DRC)</strong>, it's time to export. You need a "Gerber" file.</p>
-            <ol>
-                <li>Click <strong>File > Generate PCB Fabrication File (Gerber)</strong>.</li>
-                <li>Click "No, Generate Gerber Anyway" if prompted.</li>
-                <li>Download the zip file.</li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- Step 6 -->
-    <section class="step-section">
-        <span class="step-label">Step 6</span>
-        <h2 class="step-title">JLCPCB Ordering</h2>
-        <div class="step-body">
-            <p>Go to <a href="https://jlcpcb.com" target="_blank">jlcpcb.com</a> and upload your Gerber zip file. You should see an instant quote!</p>
-            <div class="img-container">
-                <img src="https://blueprint.hackclub.com/old-cdn/6f538d5f301eae997544c43c1d6ce6daca01331d_image.webp" alt="JLCPCB Settings">
-                <div class="img-caption">Ensure settings match the defaults shown here.</div>
+        <!-- Step 3 -->
+        <section class="step-section">
+            <span class="step-label">Step 3</span>
+            <h2 class="step-title">Routing your Traces</h2>
+            <div class="step-body">
+                <p>The blue ratlines show you the connections but they aren't real wires yet. You need to "route" them
+                    with copper tracks.</p>
+                <ul>
+                    <li>Select the <strong>TopLayer (Red)</strong> or <strong>BottomLayer (Blue)</strong>.</li>
+                    <li>Click <strong>'W'</strong> or the Track tool to draw copper lines between pads.</li>
+                    <li>If wires must cross each other, click <strong>'V'</strong> to place a <strong>Via</strong> and
+                        switch to the other side of the board.</li>
+                </ul>
             </div>
-            <ul>
-                <li><strong>Layers:</strong> 2</li>
-                <li><strong>Materials:</strong> FR-4</li>
-                <li><strong>PCBA:</strong> NO (We will hand-solder these!).</li>
-            </ul>
-            <p>Once you have your price, take a screenshot of the quote with <strong>Global Standard Direct</strong> shipping selected.</p>
-        </div>
-    </section>
+        </section>
 
-    <div class="nav-links-bottom" style="justify-content: center;">
-        <div style="text-align: center;">
-            <p style="font-size: 16px; margin-bottom: 15px;">Congratulations! You've designed your first hardware project.</p>
-            <a href="index.html#rsvp" class="hero-btn">Register for the Event →</a>
+        <!-- Step 4 -->
+        <section class="step-section">
+            <span class="step-label">Step 4</span>
+            <h2 class="step-title">Add Custom Art</h2>
+            <div class="step-body">
+                <p>You can add text and images to your board using the <strong>TopSilkLayer</strong> (the white ink).
+                </p>
+                <p><strong>IMPORTANT:</strong> You must add the <strong>JLCPCB logo</strong> to your silkscreen to show
+                    your support! You can find it in the EasyEDA library or import it as an image.</p>
+                <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                    <img src="easyeda_top_silk.png" alt="Top Silk Layer" style="max-width: 200px; border-radius: 4px;">
+                    <img src="easyeda_text_properties.png" alt="Text Properties"
+                        style="max-width: 200px; border-radius: 4px;">
+                </div>
+                <p>Go to <strong>File > Import > Image</strong> to add your own logo or artwork to the board.</p>
+            <div class="img-container">
+                <img src="easyeda_import_logo.png" alt="Import Image Dialog" style="max-width: 500px; margin: 0 auto; display: block;">
+                <div class="img-caption">The EasyEDA 'Insert Image to PCB' dialog. Use this to import the JLCPCB logo.</div>
+            </div>
+                <div class="img-container">
+                    <img src="easyeda_logo_placement.png" alt="Logo Placement Example">
+                    <div class="img-caption">Example placement of the JLCPCB logo and custom text.</div>
+                </div>
+                <div class="img-container">
+                    <img src="https://blueprint.hackclub.com/old-cdn/50638b1bb956cd429eab5755e7aaf142ffe088db_image.webp"
+                        alt="3D View">
+                    <div class="img-caption">3D View of a finished custom PCB design.</div>
+                </div>
+                <div class="tip-card">
+                    <div>
+                        <strong>Pro Tip:</strong> Click <strong>View > 3D View</strong> periodically to see how your
+                        physical board will actually look!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 5 -->
+        <section class="step-section">
+            <span class="step-label">Step 5</span>
+            <h2 class="step-title">Manufacturing Files</h2>
+            <div class="step-body">
+                <p>Once you pass the <strong>Design Rules Check (Design > DRC)</strong>, it's time to export. You need a
+                    "Gerber" file.</p>
+                <ol>
+                    <li>Click <strong>File > Generate PCB Fabrication File (Gerber)</strong>.</li>
+                    <li>Click "No, Generate Gerber Anyway" if prompted.</li>
+                    <li>Download the zip file.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Step 6 -->
+        <section class="step-section">
+            <span class="step-label">Step 6</span>
+            <h2 class="step-title">JLCPCB Ordering</h2>
+            <div class="step-body">
+                <p>Go to <a href="https://jlcpcb.com" target="_blank">jlcpcb.com</a> and upload your Gerber zip file.
+                    You should see an instant quote!</p>
+                <div class="img-container">
+                    <img src="https://blueprint.hackclub.com/old-cdn/6f538d5f301eae997544c43c1d6ce6daca01331d_image.webp"
+                        alt="JLCPCB Settings">
+                    <div class="img-caption">Ensure settings match the defaults shown here.</div>
+                </div>
+                <ul>
+                    <li><strong>Layers:</strong> 2</li>
+                    <li><strong>Materials:</strong> FR-4</li>
+                    <li><strong>PCBA:</strong> NO (We will hand-solder these!).</li>
+                </ul>
+                <p>Once you have your price, take a screenshot of the quote with <strong>Global Standard Direct</strong>
+                    shipping selected.</p>
+            </div>
+        </section>
+
+        <div class="nav-links-bottom" style="justify-content: center;">
+            <div style="text-align: center;">
+                <p style="font-size: 16px; margin-bottom: 15px;">Congratulations! You've designed your first hardware
+                    project.</p>
+                <a href="index.html#rsvp" class="hero-btn">Register for the Event →</a>
+            </div>
         </div>
     </div>
-</div>
 
-<footer style="padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 100px;">
-  <p style="color: var(--guide-dim);">Bharatpur Build Guild x Hack Club Blueprint</p>
-</footer>
+    <footer
+        style="padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 100px;">
+        <p style="color: var(--guide-dim);">Bharatpur Build Guild x Hack Club Blueprint</p>
+    </footer>
 
 </body>
+
 </html>
